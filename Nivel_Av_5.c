@@ -5,7 +5,7 @@
         int nota1,nota2,nota3;
         float media;
 
-        printf("******Program de Calculo de media\n");
+        printf("**Program de Calculo de media\n");
         printf("Digite a sua primeira nota:\n");
         scanf("%d", &nota1 );
 
@@ -17,7 +17,7 @@
 
         media = (float) (nota1 + nota2 + nota3) /3;
 
-        printf(" A media das suas notas é:\n %f", media);
+        printf(" A media das suas notas é:\n %.2f", media);
 
         return 0;
 
