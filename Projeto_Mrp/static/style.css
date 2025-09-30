@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap'); /*importação das fontes*/
+*{ /*Define as atribuições abaixo a todos os itens do html, chamado de reset css*/
+    margin: 0; /*Margem geral da pagina*/
+    padding: 0; /*Um offset em relação a margem até o conteudo propriamente dito*/
+}
+
+body { /* Define os atributos de todo o body do html*/
+    height: 100vh; /*Define a altura em 100% do height de viewport*/
+    box-sizing: border-box; /*LImita o tamanho dos itens até no maximo a borda do body*/
+    background-color: black;
+    color: #F6F6F6;
+
+}
+
+.destaque_titulo { /*Atenção à utilidade de usar classes no html para poder atribuir os estilos no css usando ".nomedaclasse"*/
+    color: aqua;
+}
+
+.apresentacao{
+    margin: 10% 15%; 
+    display: flex; /*Usado para definir o item como um flexbox, o que traz varias facilidades e atribuições*/
+    align-items: center;
+    justify-content: space-between; /*Definição do tipo de espaçamento do container flexbox*/
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column; /*Altera a disposição dos itens que por padrão vem em linha*/
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: "Krona One", sans-serif; 
+}
+.apresentacao__conteudo__paragrafo{
+    font-size: 24px;  
+    font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+}
+.apresentacao__links_link{
+    background-color: aqua;
+    color: black;
+    font-size: 24px;    
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    padding: 21px 0;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+
+}
