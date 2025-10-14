@@ -13,20 +13,20 @@ int main(){
     scanf("%u", &estoque);
 
     if  (temperatura > 30){
-        printf("A temperatura está alta\n");
+        printf("A temperatura está alta.\n");
     }else{
-        printf("A temperatura está dentro dos parametros\n");
+        printf("A temperatura está dentro dos parametros.\n");
     }
 
     if (umidade > 50){
-        printf("A umidade está elevada\n");
+        printf("A umidade está elevada.\n");
     }else{
-        printf("A umidade está dentro dos parametros\n");
+        printf("A umidade está dentro dos parametros.\n");
     }
     if (estoque < estoque_minimo){
-        printf("Estoque minimo abaixo do necessario\n");
+        printf("Estoque minimo abaixo do necessario.\n");
     }else{
-        printf("Estoque minimo dentro dos parametros\n");
+        printf("Estoque minimo dentro dos parametros.\n");
     }
 
 }
