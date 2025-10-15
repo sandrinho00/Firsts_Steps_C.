@@ -106,7 +106,7 @@
         printf("***Resultados da comparação entre cartas:\n");
         printf("Pupulação %s maior que %s : %d\n", nome_cidade_01, nome_cidade_02, população_01 > população_02);
         printf("Área %s maior que %s : %d\n", nome_cidade_01, nome_cidade_01, area_km_01 > area_km_02);
-        printf("Pib %s maior que %s : %d", nome_cidade_01, nome_cidade_02, pib_01 > pib_02);
+        printf("Pib %s maior que %s : %d\n", nome_cidade_01, nome_cidade_02, pib_01 > pib_02);
         printf("Numero de pontos turisticos %s maior que %s : %d\n", nome_cidade_01, nome_cidade_02, numero_pontos_01 > numero_pontos_02);
         printf("Densidade populacional %s maior que %s : %d\n", nome_cidade_01, nome_cidade_02, densidade_populaciona_carta1 > densidade_populaciona_carta2);
         printf("Pib per capta %s maior que %s :%d\n", nome_cidade_01, nome_cidade_02, pib_01 > pib_02);
