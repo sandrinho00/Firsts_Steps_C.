@@ -12,19 +12,21 @@
     
 
         //Declaração das variaveis da carta 02
-        char estado_02[20], codigo_02[10], nome_cidade_02[30];  //Declaração das variáveis do tipo char
+        char estado_02[20], codigo_02[10], nome_cidade_02[30]; //Declaração das variáveis do tipo char
         int população_02, numero_pontos_02; //Declaração das variáveis do tipo int
         float area_km_02, pib_02; // Declaração das variáveis do tipo float
         //Declaração da variavel para calculdo de densidade populaiconal
         float densidade_populaciona_carta2, pib_per_capta2;
 
-       //Declaração das variaveis de super poder, que são a soma dos atributos, com densidade populacional inveritida
-       float super_poderA;
-       float super_poderB;
+        //Declaração das variaveis de super poder, que são a soma dos atributos, com densidade populacional inveritida
+        float super_poderA;
+        float super_poderB;
 
-       //Declaração de variaveis para inversão da densidade populacional
-       float densidade_invertida_01;
-       float densidade_invertida_02;
+        //Declaração de variaveis para inversão da densidade populacional
+        float densidade_invertida_01;
+        float densidade_invertida_02;
+
+
 
         printf("Bem vido ao Super Trunfo Novato.\nQuando solicitado, digite os dados da carta 01.\n");  //
         
@@ -103,7 +105,7 @@
         printf(" Densidade Populacional: %f \n Pip per Capta: %f\n", densidade_populaciona_carta2, pib_per_capta2);
         printf(" Super poder: %f\n", super_poderB);
 
-        //Exibição das comparações em hardcode
+        //Exibição das comparações em hardcode:
         printf("***Resultados da comparação entre cartas:\n");
         printf("Pupulação %s maior que %s : %d\n", nome_cidade_01, nome_cidade_02, população_01 > população_02);
         printf("Área %s maior que %s : %d\n", nome_cidade_01, nome_cidade_01, area_km_01 > area_km_02);
@@ -113,7 +115,21 @@
         printf("Pib per capta %s maior que %s :%d\n", nome_cidade_01, nome_cidade_02, pib_01 > pib_02);
         printf("Super poder %s maior que %s : %d\n", nome_cidade_01, nome_cidade_02, super_poderA >super_poderB);
 
-        //Exibição dos
+        //Interação com o jogador para mostrar o atributo que será usado como determinante:
+        printf("Atributo de comparação: PIB per capta.\n");
+        printf("Carta 1 - %s: %f\n", nome_cidade_01, pib_per_capta1);
+        printf("Carta 2 - %s: %f\n", nome_cidade_02, pib_per_capta2);
+
+        //Condição de determinação do ganhador:
+        if (pib_per_capta1 > pib_per_capta2){ 
+
+            printf("O ganhador foi %s :\n", nome_cidade_01);
+
+        }else{
+
+            printf("O ganhador foi %s :\n",nome_cidade_02);
+        }
+        
         printf("****Fiim do jogo.");
 
          }
